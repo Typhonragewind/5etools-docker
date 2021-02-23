@@ -42,6 +42,7 @@ There are 2 ways to update the container to the newer version of 5etools:
 2. While having the /data foler persisted, simply delete it's contents (excluding homebrew) and replace them with the newly downloaded files from the 5etools website source.
 
 Option 1 is simple and easy, but consumes more bandwidth and space. 
+
 Option 2 is a tad more complicated, but not overly so, and is advantageous if you have have limited bandwidth/space. This is also the option to take if you want to implement the automatic updating script found in the 5etools wiki. (Thanks **ryanvito** for the suggestion)
 
 ## Final words
