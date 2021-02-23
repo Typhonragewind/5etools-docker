@@ -20,6 +20,7 @@ There are two available tags, **img** and **noimg**, which include and exclude i
 
 docker-compose.yml example:
 ```yaml
+---
 version: '3'
 services:
     5etools:
