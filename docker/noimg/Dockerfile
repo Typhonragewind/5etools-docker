@@ -1,15 +1,14 @@
 # Filename: Dockerfile 
 FROM python:3.8-alpine3.12
 
-RUN apk --no-cache add curl unzip
+RUN apk --no-cache add curl wget
 
 RUN mkdir /data
 
 WORKDIR /data
 
-RUN curl --output 5etools.zip https://get.5e.tools/src/ && unzip 5etools.zip && rm -Rf 5etools.zip
-
-RUN cp 5etools.html index.html
+RUN curl -s https://api.github.com/repos/5etools-mirror-1/5etools-mirror-1.github.io/tags | grep tarball_url | grep v. | cut -d '"' -f 4 | head -n 1 | wget -O 5etools.tar.gz -qi - && tar xzf 5etool>
+#RUN cp 5etools.html index.html
 
 VOLUME /data/homebrew
 
