@@ -48,3 +48,6 @@ Option 2 is a tad more complicated, but not overly so, and is advantageous if yo
 ## Final words
 
 A big thank you for the 5etools developers and PR and their amazing work. They are great people!
+
+## changelog
+2022-07-11 - Fixed noimg image size and implemented versioning
